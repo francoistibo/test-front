@@ -9,12 +9,13 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     font-family: $primary-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    color: var(--color-primary);
+    color: $color-primary;
     text-align: center;
-    background-color: var(--color-light);
+    background-color: $color-light;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }

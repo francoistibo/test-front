@@ -1,0 +1,49 @@
+.cursor {
+    @include breakpoints(md) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 60px;
+        height: 60px;
+        margin: 0;
+        pointer-events: none;
+        opacity: 0;
+        transition: all .2s $easingEffectSwift;
+        will-change: transform, opacity;
+
+        &__inner {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            border: 1px solid $color-primary;
+            border-radius: 50%;
+            transition: all .2s $easingEffectSwift;
+            transform: translate3d(-44%, -40%, 0);
+            transform-origin: 50% 50%;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            backface-visibility: hidden;
+        }
+
+        &--alt {
+            .cursor__inner {
+                border-color: $color-light;
+            }
+        }
+
+        &--hover {
+            width: 110px;
+            height: 110px;
+
+            .cursor__inner {
+                opacity: .1;
+            }
+        }
+
+        html:hover & {
+            opacity: 1;
+        }
+    }
+}

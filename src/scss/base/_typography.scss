@@ -1,11 +1,11 @@
 /* Link */
 a {
-    color: var(--color-primary);
+    color: $color-primary;
     text-decoration: none;
     transition: color .2s ease;
 
     @include hover {
-        color: var(--color-dark);
+        color: $color-dark;
     }
 }
 
@@ -145,8 +145,8 @@ code {
     padding: 2px 5px;
     font-family: monospace;
     font-size: $base-font-size;
-    background-color: var(--color-dark);
-    border: 1px solid var(--color-dark);
+    background-color: $color-dark;
+    border: 1px solid $color-dark;
     border-radius: $base-border-radius;
 }
 
@@ -179,8 +179,8 @@ pre {
     @include word-wrap(break-all);
 
     white-space: pre-wrap;
-    background-color: var(--color-dark);
-    border: 1px solid var(--color-dark);
+    background-color: $color-dark;
+    border: 1px solid $color-dark;
     border-radius: $base-border-radius;
 }
 

@@ -2,12 +2,61 @@
     @include button;
 
     &--icon-right {
-        padding-right: 50px;
+        span {
+            position: relative;
+            display: inline-block;
+            margin-right: 20px;
+
+            &::after {
+                position: absolute;
+                right: 0;
+                bottom: -3px;
+                display: inline-block;
+                width: 0;
+                height: 1px;
+                content: "";
+                background-color: $color-primary;
+                transition: all .2s .1s ease-out;
+            }
+        }
+
+        img {
+            transition: transform .2s ease-in-out;
+            transform: translate3d(0, -2px, 0);
+        }
+
+        @include hover {
+            color: $color-primary;
+
+            img {
+                transform: translate3d(10px, -2px, 0);
+            }
+
+            span::after {
+                right: auto;
+                left: 0;
+                width: 100%;
+            }
+        }
     }
 
     &--scroll {
+        position: absolute;
+        right: 0;
+        bottom: 100px;
+        display: flex;
         font-size: 16px;
         text-transform: lowercase;
         transform: rotate(90deg);
+
+        img {
+            transform: translate3d(0, 0, 0);
+        }
+
+        @include hover {
+            img {
+                transform: translate3d(10px, 0, 0);
+            }
+        }
     }
 }

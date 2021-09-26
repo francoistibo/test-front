@@ -3,22 +3,23 @@
 // ----
 // Colors
 // ----
-:root {
-    --color-primary: #293881;
-    --color-light: #fff;
-    --color-dark: #000;
-}
+$color-primary: #293881;
+$color-light: #fff;
+$color-dark: #000;
+$color-paragraph: #777;
 
 // ----
 // Breakpoints
 // ----
 $container-width: 1290px;
+$container-width-large: 1600px;
 $mobile-external-gutter: 25px;
 $breakpoints : (
     xsm: 600,
     sm: 768,
     md: 1024,
-    lg: 1290
+    lg: 1290,
+    xl: 1600
 );
 
 // ----
@@ -48,13 +49,13 @@ $column-preset : (
 // ----
 // Spacing
 // ----
-$base-spacing: 32px;
+$base-spacing: 40px;
 $half-base-spacing: math.div($base-spacing, 2);
 
 // ----
 // Border
 // ----
-$base-border-color: var(--color-dark);
+$base-border-color: $color-dark;
 $base-border: 1px solid $base-border-color;
 $base-border-radius: 3px;
 
@@ -73,4 +74,10 @@ $base-font-size: 16px;
 // Line Height
 // ----
 $base-line-height: 2;
-$heading-line-height: 1.6;
+$heading-line-height: 1.3;
+
+// ----
+// Easing
+// ----
+$easingEffectNormal: cubic-bezier(.86, 0, .07, 1);
+$easingEffectSwift: cubic-bezier(0, 0, .2, .92);

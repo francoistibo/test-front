@@ -9,8 +9,17 @@
 
     @if $size == XXL {
         font-size: 30px;
+        line-height: 1.2;
 
         @include breakpoints(sm) {
+            font-size: 60px;
+        }
+        
+        @include breakpoints(md) {
+            font-size: 80px;
+        }
+
+        @include breakpoints(lg) {
             font-size: 120px;
         }
     }
@@ -18,15 +27,16 @@
     @if $size == XL {
         font-size: 22px;
 
-        @include breakpoints(sm) {
+        @include breakpoints(md) {
             font-size: 28px;
+            line-height: 1.4;
         }
     }
 
     @if $size == L {
         font-size: 20px;
 
-        @include breakpoints(sm) {
+        @include breakpoints(md) {
             font-size: 26px;
         }
     }
@@ -34,7 +44,7 @@
     @if $size == M {
         font-size: 19px;
 
-        @include breakpoints(sm) {
+        @include breakpoints(md) {
             font-size: 24px;
         }
     }
@@ -42,7 +52,7 @@
     @if $size == S {
         font-size: 18px;
 
-        @include breakpoints(sm) {
+        @include breakpoints(md) {
             font-size: 22px;
         }
     }
@@ -50,12 +60,12 @@
     @if $size == XS {
         font-size: 16px;
 
-        @include breakpoints(sm) {
+        @include breakpoints(md) {
             font-size: 20px;
         }
     }
 
-    @include breakpoints(sm) {
+    @include breakpoints(md) {
         span {
             display: block;
         }

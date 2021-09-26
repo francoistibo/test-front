@@ -1,8 +1,15 @@
 .logo {
-    width: 100px;
+    width: 231px;
     height: auto;
 
-    @include breakpoints(sm) {
-        width: auto;
+    &--main {
+        width: 150px;
+        margin-left: 0;
+    }
+
+    @include breakpoints(md) {
+        &--main {
+            width: 231px;
+        }
     }
 }

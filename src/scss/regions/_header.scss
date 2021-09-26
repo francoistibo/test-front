@@ -5,6 +5,6 @@
     padding: 30px;
 
     @include breakpoints(md) {
-        padding: 50px 75px;
+        padding: 50px 40px 50px 75px;
     }
 }

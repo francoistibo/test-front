@@ -1,3 +1,5 @@
+@use "sass:math";
+
 /**
  * Column
  *
@@ -50,7 +52,7 @@
         $total-gutter: $total-column - 1;
     }
 
-    @return ($nb-column * $column-width + $nb-gutter * $gutter-width) / ($total-column * $column-width + $total-gutter * $gutter-width) * 100%;
+    @return math.div($nb-column * $column-width + $nb-gutter * $gutter-width, $total-column * $column-width + $total-gutter * $gutter-width) * 100%;
 }
 
 // ----

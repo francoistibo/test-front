@@ -1,3 +1,361 @@
 .section {
-    
+    $this: &;
+
+    padding: 60px 0;
+    text-align: left;
+
+    // Section with blue background
+    &--blue {
+        color: $color-light;
+        background-color: $color-primary;
+
+        .button--icon-right {
+            color: $color-light;
+
+            span::after {
+                background-color: $color-light;
+            }
+
+            @include hover {
+                color: $color-light;
+            }
+        }
+    }
+
+    // Introduction section
+    &--introduction {
+        padding-top: 20px;
+
+        > .container {
+            justify-content: flex-start;
+            width: $container-width-large;
+        }
+    }
+
+    // Jobs section
+    &--jobs {
+        .jobs {
+            &__list {
+                &-item {
+                    position: relative;
+                    display: inline-block;
+                    padding-right: 30px;
+                    font-weight: 700;
+                    line-height: 1.5;
+
+                    &::after {
+                        position: absolute;
+                        top: 50%;
+                        right: 9px;
+                        font-size: 24px;
+                        color: $color-light;
+                        content: "•";
+                        transform: translate3d(0, -50%, 0);
+                    }
+
+                    &:last-child::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    // Work section
+    &--work {
+        text-align: center;
+        background-image: url("src/img/overlay.png");
+        background-repeat: repeat;
+        background-position: center center;
+
+        > .container {
+            flex-direction: column;
+        }
+
+        .work {
+            &__list {
+                margin-bottom: 0;
+
+                &-pic {
+                    transition: all .2s ease-in-out;
+
+                    &:hover {
+                        box-shadow: 0 0 5px 1px rgba($color-dark, .3);
+                        transform: scale(1.1) rotate(-2deg);
+                    }
+                }
+            }
+        }
+    }
+
+    // Phylosophy section
+    &--phylosophy {
+        p {
+            color: $color-paragraph;
+        }
+
+        #{$this}__pictures {
+            &-item {
+                display: block;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    // Partners section
+    &--partners {
+        padding-top: 0;
+
+        p {
+            color: $color-paragraph;
+        }
+    }
+
+    // Keyfigures section
+    &--keyfigures {
+        text-align: center;
+
+        > .container {
+            flex-direction: column;
+        }
+
+        .keyfigures {
+            &__list {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                &-item {
+                    margin-bottom: 50px;
+                    line-height: 1.2;
+
+                    strong {
+                        display: block;
+                        font-family: $primary-font-family;
+                        font-size: 50px;
+                        font-weight: 900;
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+        }
+    }
+
+    // Location section
+    &--location {
+        padding: 0;
+
+        #{$this}__picture-full {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @include breakpoints(sm) {
+        // Jobs section
+        &--jobs {
+            .jobs {
+                &__list {
+                    &-item {
+                        padding-right: 40px;
+                        font-size: 35px;
+
+                        &::after {
+                            right: 13px;
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include breakpoints(md) {
+        padding: 165px 0;
+
+        > .container {
+            display: flex;
+        }
+
+        &__text *:last-child {
+            margin-bottom: 0;
+        }
+
+        // Introduction section
+        &--introduction {
+            padding-top: 0;
+
+            > .container {
+                align-items: center;
+            }
+
+            #{$this}__text {
+                position: relative;
+                z-index: 3;
+                width: column(5, 5);
+
+                p {
+                    width: column(10);
+                }
+            }
+
+            #{$this}__picture {
+                width: column(4, 3);
+            }
+
+            #{$this}__navigation {
+                position: relative;
+                align-self: flex-end;
+                width: column(1, 1);
+            }
+
+            #{$this}__social {
+                display: flex;
+                align-self: flex-end;
+                justify-content: flex-end;
+                width: column(2, 2);
+            }
+        }
+
+        // Jobs section
+        &--jobs {
+            .jobs {
+                &__list {
+                    &-item {
+                        padding-right: 40px;
+                        font-size: 50px;
+
+                        &::after {
+                            right: 10px;
+                            font-size: 50px;
+                        }
+                    }
+                }
+            }
+        }
+
+        // Phylosophy section
+        &--phylosophy {
+            padding-bottom: 0;
+
+            > .container {
+                flex-direction: column;
+            }
+
+            #{$this}__text {
+                width: column(6, 6);
+                padding-bottom: 60px;
+            }
+
+            #{$this}__pictures {
+                display: flex;
+                flex-wrap: wrap;
+
+                &-item {
+                    width: 100%;
+                    height: auto;
+                }
+
+                &-col-md {
+                    width: column(4, 5);
+                    padding-top: column(1, 2);
+                }
+
+                &-col-lg {
+                    width: column(8, 6);
+                    padding-left: 30px;
+                }
+            }
+        }
+
+        // Partners section
+        &--partners {
+            .inner {
+                width: column(8);
+                margin-left: column(2, 2);
+            }
+
+            #{$this}__text {
+                width: column(8);
+                margin-bottom: 60px;
+            }
+        }
+
+        // Keyfigures section
+        &--keyfigures {
+            .keyfigures {
+                &__list {
+                    flex-direction: row;
+                    width: column(10);
+                    padding: 30px 0 0;
+                    margin-left: column(1, 1);
+
+                    &-item {
+                        margin-bottom: 0;
+                        font-size: 24px;
+                        line-height: 1.2;
+
+                        strong {
+                            font-size: 70px;
+                        }
+                    }
+                }
+            }
+        }
+
+        // Location section
+        &--location {
+            width: 100vw;
+            height: 100vh;
+            padding: 0;
+            overflow: hidden;
+            text-align: center;
+
+            > .container {
+                position: relative;
+            }
+
+            #{$this}__map {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: column(7, 7);
+                padding: 80px 60px 130px;
+                background-position: top -120% left 180%;
+
+                &-meters {
+                    font-size: 70px;
+                }
+
+                &-address {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
+    @include breakpoints(lg) {
+        // Jobs section
+        &--jobs {
+            .jobs {
+                &__list {
+                    &-item {
+                        padding-right: 50px;
+                        font-size: 68px;
+                        line-height: 1.4;
+
+                        &::after {
+                            right: 11px;
+                            font-size: 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
