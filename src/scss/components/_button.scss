@@ -1,0 +1,13 @@
+.button {
+    @include button;
+
+    &--icon-right {
+        padding-right: 50px;
+    }
+
+    &--scroll {
+        font-size: 16px;
+        text-transform: lowercase;
+        transform: rotate(90deg);
+    }
+}

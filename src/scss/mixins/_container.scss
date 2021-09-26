@@ -1,0 +1,15 @@
+/**
+ * Container
+ */
+
+@mixin container {
+    width: $container-width;
+    max-width: calc(100% - #{$mobile-external-gutter * 2});
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include breakpoints(md) {
+        padding: 0;
+    }
+}

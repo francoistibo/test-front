@@ -1,9 +1,46 @@
-body {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  background-color: green;
-  margin-top: 60px;
-}
+@import "../node_modules/normalize-scss/sass/normalize/import-now";
+
+/**
+* Vars
+*/
+
+@import "base/variables";
+
+/**
+* Mixins
+*/
+
+@import "mixins/breakpoints";
+@import "mixins/button";
+@import "mixins/column";
+@import "mixins/container";
+@import "mixins/declare-font-face";
+@import "mixins/heading";
+@import "mixins/hover";
+@import "mixins/img-responsive";
+@import "mixins/sr-only";
+@import "mixins/word-wrap";
+
+/**
+ * Base
+ */
+
+@import "base/layout";
+@import "base/fonts";
+@import "base/typography";
+
+/**
+ * Regions
+ */
+
+@import "regions/header";
+@import "regions/section";
+@import "regions/footer";
+
+/**
+ * Components
+ */
+
+@import "components/button";
+@import "components/burger";
+@import "components/logo";

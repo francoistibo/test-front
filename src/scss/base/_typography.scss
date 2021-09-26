@@ -1,0 +1,203 @@
+/* Link */
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color .2s ease;
+
+    @include hover {
+        color: var(--color-dark);
+    }
+}
+
+/* Headings */
+h1,
+.title-1 {
+
+    @include heading(XXL);
+}
+
+h2,
+.title-2 {
+
+    @include heading(XL);
+}
+
+h3,
+.title-3 {
+
+    @include heading(L);
+}
+
+h4,
+.title-4 {
+
+    @include heading(M);
+}
+
+h5,
+.title-5 {
+
+    @include heading(S);
+}
+
+h6,
+.title-6 {
+
+    @include heading(XS);
+}
+
+/* Lists */
+ol,
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+li {
+    margin: 0;
+}
+
+/* Paragraph and lists */
+p,
+li {
+    font-size: 18px;
+}
+
+/* Spacing */
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset,
+figure {
+    margin: 0 0 $base-spacing 0;
+}
+
+hr {
+    margin: $base-spacing 0;
+    clear: both;
+}
+
+blockquote {
+    padding: $base-spacing;
+    margin: 0 0 $base-spacing 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+cite {
+    font-style: italic;
+}
+
+small {
+    font-size: 11px;
+}
+
+table {
+    width: 100%;
+    margin: $base-spacing 0;
+    border-collapse: collapse;
+    border: 0;
+
+    th,
+    td {
+        padding: $half-base-spacing;
+        text-align: left;
+        vertical-align: top;
+        border: $base-border;
+    }
+}
+
+address {
+    display: block;
+    margin-bottom: $base-spacing;
+    font-style: normal;
+    line-height: 20px;
+}
+
+abbr {
+    text-decoration: underline;
+}
+
+abbr[title],
+abbr[data-original-title] {
+    cursor: help;
+    border-bottom: 1px dotted $base-border-color;
+}
+
+big {
+    font-size: larger;
+}
+
+code {
+    display: inline-block;
+    padding: 2px 5px;
+    font-family: monospace;
+    font-size: $base-font-size;
+    background-color: var(--color-dark);
+    border: 1px solid var(--color-dark);
+    border-radius: $base-border-radius;
+}
+
+s,
+strike,
+del {
+    text-decoration: line-through;
+}
+
+em,
+var {
+    font-style: italic;
+}
+
+ins {
+    text-decoration: none;
+}
+
+tt,
+kbd,
+samp {
+    font-family: monospace;
+}
+
+pre {
+    display: block;
+    padding: $half-base-spacing;
+    margin: 0 0 $base-spacing;
+
+    @include word-wrap(break-all);
+
+    white-space: pre-wrap;
+    background-color: var(--color-dark);
+    border: 1px solid var(--color-dark);
+    border-radius: $base-border-radius;
+}
+
+q {
+    display: inline;
+    font-style: italic;
+}
+
+sub,
+sup {
+    position: relative;
+    bottom: -.25em;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -.5em;
+}

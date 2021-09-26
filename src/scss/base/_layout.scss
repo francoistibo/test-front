@@ -1,0 +1,28 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $primary-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    color: var(--color-primary);
+    text-align: center;
+    background-color: var(--color-light);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    @include container;
+}
+
+img {
+    @include img-responsive;
+}

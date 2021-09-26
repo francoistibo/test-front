@@ -1,0 +1,76 @@
+@use "sass:math";
+
+// ----
+// Colors
+// ----
+:root {
+    --color-primary: #293881;
+    --color-light: #fff;
+    --color-dark: #000;
+}
+
+// ----
+// Breakpoints
+// ----
+$container-width: 1290px;
+$mobile-external-gutter: 25px;
+$breakpoints : (
+    xsm: 600,
+    sm: 768,
+    md: 1024,
+    lg: 1290
+);
+
+// ----
+// Columns
+// ----
+$column-preset : (
+    /* preset for desktop */
+    d : (
+        columnwidth: 80,
+        gutterwidth: 30,
+        totalcolumn: 12
+    ),
+    /* preset for tablet */
+    t : (
+        columnwidth: 76,
+        gutterwidth: 22,
+        totalcolumn: 8
+    ),
+    /* preset for mobile */
+    m : (
+        columnwidth: 76,
+        gutterwidth: 22,
+        totalcolumn: 4
+    )
+);
+
+// ----
+// Spacing
+// ----
+$base-spacing: 32px;
+$half-base-spacing: math.div($base-spacing, 2);
+
+// ----
+// Border
+// ----
+$base-border-color: var(--color-dark);
+$base-border: 1px solid $base-border-color;
+$base-border-radius: 3px;
+
+// ==========
+// Fonts
+// ==========
+$primary-font-family: graphik, verdana, sans-serif;
+$secondary-font-family: americana, georgia, sans-serif;
+
+// ----
+// Font Size
+// ----
+$base-font-size: 16px;
+
+// ----
+// Line Height
+// ----
+$base-line-height: 2;
+$heading-line-height: 1.6;

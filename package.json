@@ -1,5 +1,5 @@
 {
-  "name": "test-front",
+  "name": "test-motion",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -7,7 +7,21 @@
     "serve": "vite preview"
   },
   "devDependencies": {
+    "css-loader": "^6.3.0",
+    "cssnano": "^5.0.8",
+    "esbuild-loader": "^2.15.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "normalize-scss": "^7.0.1",
+    "postcss": "^8.3.8",
+    "postcss-pxtorem": "^6.0.0",
+    "postcss-sort-media-queries": "^4.1.0",
     "sass": "^1.42.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-recess-order": "^2.5.0",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-scss": "^3.21.0",
     "vite": "^2.5.4"
   },
   "dependencies": {

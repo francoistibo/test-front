@@ -1,0 +1,8 @@
+.logo {
+    width: 100px;
+    height: auto;
+
+    @include breakpoints(sm) {
+        width: auto;
+    }
+}
