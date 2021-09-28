@@ -4,6 +4,12 @@
     padding: 60px 0;
     text-align: left;
 
+    // Section with white background
+    &--white {
+        color: $color-primary;
+        background-color: $color-light;
+    }
+
     // Section with blue background
     &--blue {
         color: $color-light;
@@ -63,6 +69,7 @@
 
     // Work section
     &--work {
+        padding: 30px;
         text-align: center;
         background-image: url("src/img/overlay.png");
         background-repeat: repeat;
@@ -76,12 +83,20 @@
             &__list {
                 margin-bottom: 0;
 
+                &-item {
+                    padding: 20px 0;
+
+                    &:first-child {
+                        padding-top: 0;
+                    }
+                }
+
                 &-pic {
                     transition: all .2s ease-in-out;
 
                     &:hover {
                         box-shadow: 0 0 5px 1px rgba($color-dark, .3);
-                        transform: scale(1.1) rotate(-2deg);
+                        transform: scale(1.05) rotate(-2deg);
                     }
                 }
             }
@@ -147,12 +162,21 @@
 
     // Location section
     &--location {
+        width: 100vw;
+        height: 300px;
         padding: 0;
+        overflow: hidden;
 
-        #{$this}__picture-full {
-            display: block;
+        img {
             width: 100%;
             height: auto;
+        }
+    }
+
+    @include breakpoints(xsm) {
+        // Location section
+        &--location {
+            height: 500px;
         }
     }
 
@@ -175,6 +199,20 @@
         }
     }
 
+    @include breakpoints(md, max) {
+        // Location section
+        &--location {
+            img {
+                transform: none !important;
+            }
+        }
+
+        // Work section
+        &--work {
+            background-color: $color-light !important;
+        }
+    }
+
     @include breakpoints(md) {
         padding: 165px 0;
 
@@ -184,6 +222,20 @@
 
         &__text *:last-child {
             margin-bottom: 0;
+        }
+
+        // Section with animation on click
+        &--animated-off,
+        &--animated-on {
+            position: relative;
+            overflow: hidden;
+        }
+
+        // Section with animated blue background
+        &--animated-on {
+            .work__list {
+                transform: translate3d(-50%, 0, 0);
+            }
         }
 
         // Introduction section
@@ -235,6 +287,42 @@
                             font-size: 50px;
                         }
                     }
+                }
+            }
+        }
+
+        // Work section
+        &--work {
+            position: relative;
+            min-height: 100vh;
+            padding-right: 0;
+            padding-left: 0;
+            transition: background-color .8s .2s cubic-bezier(.17, .67, .28, 1.09);
+
+            .work {
+                &__title {
+                    position: relative;
+                    z-index: 2;
+                    pointer-events: none;
+                }
+
+                &__list {
+                    z-index: 1;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    width: 200vw;
+                    transition: transform 1s .2s cubic-bezier(.17, .67, .28, 1.09);
+
+                    &-item {
+                        display: flex;
+                        flex: 100%;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100vw;
+                        height: 100%;
+                        padding: 0;
+                    }
+
                 }
             }
         }
@@ -291,11 +379,10 @@
             .keyfigures {
                 &__list {
                     flex-direction: row;
-                    width: column(10);
                     padding: 30px 0 0;
-                    margin-left: column(1, 1);
 
                     &-item {
+                        width: 25%;
                         margin-bottom: 0;
                         font-size: 24px;
                         line-height: 1.2;
@@ -310,31 +397,11 @@
 
         // Location section
         &--location {
-            width: 100vw;
-            height: 100vh;
+            height: 70vh;
             padding: 0;
-            overflow: hidden;
-            text-align: center;
 
-            > .container {
-                position: relative;
-            }
-
-            #{$this}__map {
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: column(7, 7);
-                padding: 80px 60px 130px;
-                background-position: top -120% left 180%;
-
-                &-meters {
-                    font-size: 70px;
-                }
-
-                &-address {
-                    font-size: 24px;
-                }
+            img {
+                margin-top: -11vh;
             }
         }
     }
@@ -356,6 +423,13 @@
                     }
                 }
             }
+        }
+    }
+
+    @include breakpoints(xl) {
+        // Location section
+        &--location {
+            height: 85vh;
         }
     }
 }

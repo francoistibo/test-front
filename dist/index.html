@@ -11,42 +11,45 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Le Comptoir de l'Image — Test motion</title>
-    <script type="module" crossorigin src="./assets/index.8fbefa5c.js"></script>
-    <link rel="stylesheet" href="./assets/index.3cf9ac0d.css">
+    <script type="module" crossorigin src="./assets/index.440025f4.js"></script>
+    <link rel="modulepreload" href="./assets/vendor.c8f757b4.js">
+    <link rel="stylesheet" href="./assets/index.33f69369.css">
   </head>
-  <body>
-
+  <body data-scroll-container>
     <!-- Header -->
-    <header class="header" role="banner" aria-label="Entête de page">
-      <img class="logo logo--main" src="./assets/logo.0f69d935.svg" width="231" height="34" alt="Le Comptoir de l'Image - Paris - Pantin" />
-      <button class="burger"><img src="./assets/burger.60c74edf.svg" width="25" height="9" alt="Le Comptoir de l'Image" /></button>
+    <header class="header animate__section" role="banner" aria-label="Entête de page" data-scroll-section>
+      <img class="logo logo--main animate__frombottom" src="./assets/logo.a9f40978.svg" width="231" height="34" alt="Le Comptoir de l'Image - Paris - Pantin" />
+      <button class="burger"><span class="sr-only">Ouvrir/fermer le menu</span></button>
     </header>
 
     <!-- Content -->
     <main id="main" class="main__content" role="main" aria-label="Contenu principal">
 
       <!-- Projects section -->
-      <section class="section section--introduction">
+      <section class="section section--introduction animate__section" data-scroll-section>
         <div class="container">
           <div class="section__text">
-            <h1>Le&nbsp;comptoir de&nbsp;l'image</h1>
-            <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.</p>
-            <p>
+            <h1 class="animate__frombottom">Le&nbsp;comptoir de&nbsp;l'image</h1>
+            <p class="animate__frombottom">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.</p>
+            <p class="animate__frombottom">
               <a href="#" class="button button--icon-right">
                 <span>Découvrir tous les projets</span>
-                <img src="./assets/arrow.d46dcc75.svg" width="60" height="6" alt="" aria-hidden="true" />
+                <img src="./assets/arrow.d46dcc75.svg" width="60" height="6" alt="" class="animate__icon" aria-hidden="true" />
               </a>
             </p>
           </div>
-          <img class="section__picture" src="./assets/art01.371a145e.jpg" alt="" />
+          <div class="section__picture animate__img" data-scroll data-scroll-speed=".8">
+            <div class="animate__img-bg animate__img-h"></div>
+            <img src="./assets/art01.371a145e.jpg" class="animate__img-src animate__img-h" alt="" />
+          </div>
           <div class="section__navigation is-desktop">
-            <a href="#jobs" class="button button--icon-right button--scroll">
+            <a href="#jobs" class="button button--icon-right button--scroll animate__fromright">
               <span>Scroll</span>
-              <img src="./assets/arrow.d46dcc75.svg" width="60" height="6" alt="" aria-hidden="true" />
+              <img src="./assets/arrow.d46dcc75.svg" width="60" height="6" alt="" class="animate__icon" aria-hidden="true" />
             </a>
           </div>
           <div class="section__social">
-            <ul class="social social--mini">
+            <ul class="social social--top">
               <li class="social__item"><a class="social__link" href="#" aria-label="Facebook"><img class="social__icon" src="./assets/facebook-mini.babb8f4b.svg" title="Facebook icon" /></a></li>
               <li class="social__item"><a class="social__link" href="#" aria-label="Twitter"><img class="social__icon" src="./assets/twitter-mini.3ff6f2b2.svg" title="Twitter icon" /></a></li>
               <li class="social__item"><a class="social__link" href="#" aria-label="Instagram"><img class="social__icon" src="./assets/instagram-mini.3944d55e.svg" title="Instagram icon" /></a></li>
@@ -56,21 +59,21 @@
       </section>
 
       <!-- Jobs section -->
-      <section class="section section--jobs section--blue" id="jobs">
+      <section class="section section--jobs section--blue animate__section" id="jobs" data-scroll-section>
         <div class="container">
           <div class="section__text">
             <ul class="jobs__list">
-              <li class="jobs__list-item">&Eacute;tude de projet</li>
-              <li class="jobs__list-item">Direction artistique</li>
-              <li class="jobs__list-item">Pôle décoration et signalétique</li>
-              <li class="jobs__list-item">Pôle grand format</li>
-              <li class="jobs__list-item">Production</li>
-              <li class="jobs__list-item">Pose et installation sur site</li>
+              <li class="jobs__list-item animate__frombottom">&Eacute;tude de projet</li>
+              <li class="jobs__list-item animate__frombottom">Direction artistique</li>
+              <li class="jobs__list-item animate__frombottom">Pôle décoration et signalétique</li>
+              <li class="jobs__list-item animate__frombottom">Pôle grand format</li>
+              <li class="jobs__list-item animate__frombottom">Production</li>
+              <li class="jobs__list-item animate__frombottom">Pose et installation sur site</li>
             </ul>
-            <p>
+            <p class="animate__frombottom">
               <a href="#" class="button button--icon-right">
                 <span>Découvrir les métiers</span>
-                <img src="./assets/arrow-white.f695be73.svg" width="60" height="6" alt="" aria-hidden="true" />
+                <img src="./assets/arrow-white.f695be73.svg" width="60" height="6" alt="" class="animate__icon" aria-hidden="true" />
               </a>
             </p>
           </div>
@@ -78,90 +81,85 @@
       </section>
 
       <!-- Work section -->
-      <section class="section section--work">
-        <div class="container">
-          <div class="section__text">
-            <h2>Les réalisations</h2>
-            <ul class="work__list">
-              <li class="work__list-item"><img class="work__list-pic" src="./assets/art02.425daf0a.jpg" alt="" /></li>
-              <li class="work__list-list"><img class="work__list-pic" src="./assets/art03.d5f6e961.jpg" alt="" /></li>
-            </ul>
-          </div>
+      <section class="section section--work animate__section" data-scroll-section>
+        <div class="section__text">
+          <h2 class="work__title animate__frombottom">Les réalisations</h2>
+          <ul class="work__list">
+            <li class="work__list-item"><img class="work__list-pic" src="./assets/art02.425daf0a.jpg" alt="" data-color-background="blue" data-animation="on" /></li>
+            <li class="work__list-item"><img class="work__list-pic" src="./assets/art03.d5f6e961.jpg" alt="" data-color-background="white" data-animation="off" /></li>
+          </ul>
         </div>
       </section>
 
       <!-- Philosophy section -->
-      <section class="section section--phylosophy">
+      <section class="section section--phylosophy animate__section" data-scroll-section>
         <div class="container">
           <div class="section__text">
-            <h2>Notre <span>philosophie.</span></h2>
-            <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris. Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p>
-            <p>
+            <h2 class="animate__frombottom">Notre <span>philosophie.</span></h2>
+            <p class="animate__frombottom">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris. Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p>
+            <p class="animate__frombottom">
               <a href="#" class="button button--icon-right">
                 <span>Découvrir l'agence</span>
-                <img src="./assets/arrow.d46dcc75.svg" width="60" height="6" alt="" aria-hidden="true" />
+                <img src="./assets/arrow.d46dcc75.svg" width="60" height="6" alt="" class="animate__icon" aria-hidden="true" />
               </a>
             </p>
           </div>
           <div class="section__pictures">
-            <div class="section__pictures-col-md">
-              <img src="./assets/art05.f5a556f3.jpg" class="section__pictures-item" alt="" />
-              <img src="./assets/art06.bb9a08aa.jpg" class="section__pictures-item" alt="" />
+            <div class="section__pictures-col-md" data-scroll data-scroll-speed=".6">
+              <img class="section__pictures-item" src="./assets/art05.f5a556f3.jpg" alt="" />
+              <img class="section__pictures-item" src="./assets/art06.bb9a08aa.jpg" alt="" />
             </div>
-            <div class="section__pictures-col-lg">
-              <img src="./assets/art04.c1dbaef3.jpg" class="section__pictures-item" alt="" />
+            <div class="section__pictures-col-lg" data-scroll data-scroll-speed="1.4">
+              <img class="section__pictures-item" src="./assets/art04.c1dbaef3.jpg" alt="" />
             </div>
           </div>
         </div>
       </section>
 
       <!-- Partners section -->
-      <section class="section section--partners">
+      <section class="section section--partners animate__section" data-scroll-section>
         <div class="container">
           <div class="inner">
             <div class="section__text">
-              <h2>Ils nous font <span>confiance.</span></h2>
-              <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique.</p>
+              <h2 class="animate__frombottom">Ils nous font <span>confiance.</span></h2>
+              <p class="animate__frombottom">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique.</p>
             </div>
-            <img class="section__picture img--white" src="./assets/partners.53c52d61.png" alt="Tous nos partenaires" />
+            <img class="section__picture img--white animate__frombottom" src="./assets/partners.53c52d61.png" alt="Tous nos partenaires" />
           </div>
         </div>
       </section>
 
       <!-- Key figures section -->
-      <section class="section section--keyfigures section--blue">
+      <section class="section section--keyfigures section--blue animate__section" data-scroll-section>
         <div class="container">
           <div class="section__text">
             <h2>Quelques <span>chiffres clés.</span></h2>
             <ul class="keyfigures__list">
-              <li class="keyfigures__list-item"><strong>50</strong> collaborateurs</li>
-              <li class="keyfigures__list-item"><strong>182</strong> clients</li>
-              <li class="keyfigures__list-item"><strong>35</strong> partenaires</li>
-              <li class="keyfigures__list-item"><strong>4500</strong> mètres carré à Pantin</li>
+              <li class="keyfigures__list-item"><strong class="keyfigures__list-countup">50</strong> collaborateurs</li>
+              <li class="keyfigures__list-item"><strong class="keyfigures__list-countup">182</strong> clients</li>
+              <li class="keyfigures__list-item"><strong class="keyfigures__list-countup">35</strong> partenaires</li>
+              <li class="keyfigures__list-item"><strong class="keyfigures__list-countup">4500</strong> mètres carré à Pantin</li>
             </ul>
           </div>
         </div>
       </section>
 
       <!-- Location section -->
-      <section class="section section--location">
-        <img class="section__picture-full" src="./assets/place.a323d764.jpg" alt="" />
-        <div class="container">
-          
-        </div>
+      <section class="section section--location animate__section" tabindex="-1" data-scroll-section>
+        <img src="./assets/place.a323d764.jpg" alt="" data-scroll data-scroll-speed="-1" />
       </section>
     </main>
 
     <!-- Footer -->
-    <footer class="footer" role="contentinfo" aria-label="Pied de page">
+    <footer class="footer" role="contentinfo" aria-label="Pied de page" data-scroll-section>
       <div class="container">
         <div class="footer__col">
-          <div class="footer__map">
-            <img class="logo logo--footer" src="./assets/logo-white.ec243e6e.svg" width="231" height="34" alt="Le Comptoir de l'Image - Paris - Pantin" />
+          <div class="footer__map" data-scroll data-scroll-speed="1.5">
+            <img class="logo logo--footer" src="./assets/logo-white.bb6eda42.svg" width="231" height="34" alt="Le Comptoir de l'Image - Paris - Pantin" />
             <p class="footer__map-meters">45000 m2</p>
             <p class="footer__map-address">176 rue Diderot <br />93500 Pantin <br />France</p>
           </div>
-          <div class="footer__contact-details footer__col-item">
+          <div class="footer__contact-details footer__col-item ">
             <h3 class="title-2 footer__title">Contact</h3>
             <p>Phone: +33 1 48 45 22 42</p>
             <p>Fax: +33 1 48 45 82 95</p>
@@ -169,7 +167,7 @@
           </div>
           <div class="footer__social footer__col-item">
             <h3 class="title-2 footer__title">Réseaux</h3>
-            <ul class="social social--footer">
+            <ul class="social social--bottom">
               <li class="social__item"><a class="social__link" href="#" aria-label="Facebook"><img class="social__icon" src="./assets/facebook.38d0ab0e.svg" title="Facebook icon" /></a></li>
               <li class="social__item"><a class="social__link" href="#" aria-label="Instagram"><img class="social__icon" src="./assets/instagram.046855b2.svg" title="Instagram icon" /></a></li>
               <li class="social__item"><a class="social__link" href="#" aria-label="Twitter"><img class="social__icon" src="./assets/twitter.c7e04a0c.svg" title="Twitter icon" /></a></li>
@@ -178,7 +176,7 @@
         </div>
         <div class="footer__mentions">
           <p class="footer__mentions-legals"><a href="#" title="Voir les mentions légales">Mentions légales</a></p>
-          <p class="footer__mentions-copyright">&copy; 2019 Le Comptoir de l'Image</p>
+          <p class="footer__mentions-copyright">&copy; 2021 Le Comptoir de l'Image</p>
         </div>
       </div>
     </footer>
