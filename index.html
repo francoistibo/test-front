@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" sizes="152x152" href="src/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/favicons/favicon-16x16.png">
+    <link rel="manifest" href="src/favicons/site.webmanifest">
+    <link rel="mask-icon" href="src/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Comptoir de l'Image — Test motion</title>
+  </head>
+  <body data-scroll-container>
+    <!-- Header -->
+    <header class="header animate__section" role="banner" aria-label="Entête de page" data-scroll-section>
+      <img class="logo logo--main animate__frombottom" src="src/img/logo.svg" width="231" height="34" alt="Le Comptoir de l'Image - Paris - Pantin" />
+      <button class="burger"><span class="sr-only">Ouvrir/fermer le menu</span></button>
+    </header>
+
+    <!-- Content -->
+    <main id="main" class="main__content" role="main" aria-label="Contenu principal">
+
+      <!-- Projects section -->
+      <section class="section section--introduction animate__section" data-scroll-section>
+        <div class="container">
+          <div class="section__text">
+            <h1 class="animate__frombottom">Le&nbsp;comptoir de&nbsp;l'image</h1>
+            <p class="animate__frombottom">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.</p>
+            <p class="animate__frombottom">
+              <a href="#" class="button button--icon-right">
+                <span>Découvrir tous les projets</span>
+                <img src="src/icons/arrow.svg" width="60" height="6" alt="" class="animate__icon" aria-hidden="true" />
+              </a>
+            </p>
+          </div>
+          <div class="section__picture animate__img" data-scroll data-scroll-speed=".8">
+            <div class="animate__img-bg animate__img-h"></div>
+            <img src="src/img/art01.jpg" class="animate__img-src animate__img-h" alt="" />
+          </div>
+          <div class="section__navigation is-desktop">
+            <a href="#jobs" class="button button--icon-right button--scroll animate__fromright">
+              <span>Scroll</span>
+              <img src="src/icons/arrow.svg" width="60" height="6" alt="" class="animate__icon" aria-hidden="true" />
+            </a>
+          </div>
+          <div class="section__social">
+            <ul class="social social--top">
+              <li class="social__item"><a class="social__link" href="#" aria-label="Facebook"><img class="social__icon" src="src/icons/facebook-mini.svg" title="Facebook icon" /></a></li>
+              <li class="social__item"><a class="social__link" href="#" aria-label="Twitter"><img class="social__icon" src="src/icons/twitter-mini.svg" title="Twitter icon" /></a></li>
+              <li class="social__item"><a class="social__link" href="#" aria-label="Instagram"><img class="social__icon" src="src/icons/instagram-mini.svg" title="Instagram icon" /></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Jobs section -->
+      <section class="section section--jobs section--blue animate__section" id="jobs" data-scroll-section>
+        <div class="container">
+          <div class="section__text">
+            <ul class="jobs__list">
+              <li class="jobs__list-item animate__frombottom">&Eacute;tude de projet</li>
+              <li class="jobs__list-item animate__frombottom">Direction artistique</li>
+              <li class="jobs__list-item animate__frombottom">Pôle décoration et signalétique</li>
+              <li class="jobs__list-item animate__frombottom">Pôle grand format</li>
+              <li class="jobs__list-item animate__frombottom">Production</li>
+              <li class="jobs__list-item animate__frombottom">Pose et installation sur site</li>
+            </ul>
+            <p class="animate__frombottom">
+              <a href="#" class="button button--icon-right">
+                <span>Découvrir les métiers</span>
+                <img src="src/icons/arrow-white.svg" width="60" height="6" alt="" class="animate__icon" aria-hidden="true" />
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work section -->
+      <section class="section section--work animate__section" data-scroll-section>
+        <div class="section__text">
+          <h2 class="work__title animate__frombottom">Les réalisations</h2>
+          <ul class="work__list">
+            <li class="work__list-item"><img class="work__list-pic" src="src/img/art02.jpg" alt="" data-color-background="blue" data-animation="on" /></li>
+            <li class="work__list-item"><img class="work__list-pic" src="src/img/art03.jpg" alt="" data-color-background="white" data-animation="off" /></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Philosophy section -->
+      <section class="section section--phylosophy animate__section" data-scroll-section>
+        <div class="container">
+          <div class="section__text">
+            <h2 class="animate__frombottom">Notre <span>philosophie.</span></h2>
+            <p class="animate__frombottom">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris. Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p>
+            <p class="animate__frombottom">
+              <a href="#" class="button button--icon-right">
+                <span>Découvrir l'agence</span>
+                <img src="src/icons/arrow.svg" width="60" height="6" alt="" class="animate__icon" aria-hidden="true" />
+              </a>
+            </p>
+          </div>
+          <div class="section__pictures">
+            <div class="section__pictures-col-md" data-scroll data-scroll-speed=".6">
+              <img class="section__pictures-item" src="src/img/art05.jpg" alt="" />
+              <img class="section__pictures-item" src="src/img/art06.jpg" alt="" />
+            </div>
+            <div class="section__pictures-col-lg" data-scroll data-scroll-speed="1.4">
+              <img class="section__pictures-item" src="src/img/art04.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Partners section -->
+      <section class="section section--partners animate__section" data-scroll-section>
+        <div class="container">
+          <div class="inner">
+            <div class="section__text">
+              <h2 class="animate__frombottom">Ils nous font <span>confiance.</span></h2>
+              <p class="animate__frombottom">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique.</p>
+            </div>
+            <img class="section__picture img--white animate__frombottom" src="src/img/partners.png" alt="Tous nos partenaires" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Key figures section -->
+      <section class="section section--keyfigures section--blue animate__section" data-scroll-section>
+        <div class="container">
+          <div class="section__text">
+            <h2>Quelques <span>chiffres clés.</span></h2>
+            <ul class="keyfigures__list">
+              <li class="keyfigures__list-item"><strong class="keyfigures__list-countup">50</strong> collaborateurs</li>
+              <li class="keyfigures__list-item"><strong class="keyfigures__list-countup">182</strong> clients</li>
+              <li class="keyfigures__list-item"><strong class="keyfigures__list-countup">35</strong> partenaires</li>
+              <li class="keyfigures__list-item"><strong class="keyfigures__list-countup">4500</strong> mètres carré à Pantin</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Location section -->
+      <section class="section section--location animate__section" tabindex="-1" data-scroll-section>
+        <img src="src/img/place.jpg" alt="" data-scroll data-scroll-speed="-1" />
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo" aria-label="Pied de page" data-scroll-section>
+      <div class="container">
+        <div class="footer__col">
+          <div class="footer__map" data-scroll data-scroll-speed="1.5">
+            <img class="logo logo--footer" src="src/img/logo-white.svg" width="231" height="34" alt="Le Comptoir de l'Image - Paris - Pantin" />
+            <p class="footer__map-meters">45000 m2</p>
+            <p class="footer__map-address">176 rue Diderot <br />93500 Pantin <br />France</p>
+          </div>
+          <div class="footer__contact-details footer__col-item ">
+            <h3 class="title-2 footer__title">Contact</h3>
+            <p>Phone: +33 1 48 45 22 42</p>
+            <p>Fax: +33 1 48 45 82 95</p>
+            <p><a href="mailto:info@comptoirimage.com" title="Voir les mentions légales">info@comptoirimage.com</a></p>
+          </div>
+          <div class="footer__social footer__col-item">
+            <h3 class="title-2 footer__title">Réseaux</h3>
+            <ul class="social social--bottom">
+              <li class="social__item"><a class="social__link" href="#" aria-label="Facebook"><img class="social__icon" src="src/icons/facebook.svg" title="Facebook icon" /></a></li>
+              <li class="social__item"><a class="social__link" href="#" aria-label="Instagram"><img class="social__icon" src="src/icons/instagram.svg" title="Instagram icon" /></a></li>
+              <li class="social__item"><a class="social__link" href="#" aria-label="Twitter"><img class="social__icon" src="src/icons/twitter.svg" title="Twitter icon" /></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__mentions">
+          <p class="footer__mentions-legals"><a href="#" title="Voir les mentions légales">Mentions légales</a></p>
+          <p class="footer__mentions-copyright">&copy; 2021 Le Comptoir de l'Image</p>
+        </div>
+      </div>
+    </footer>
+    <div class="cursor"><div class="cursor__inner"></div></div>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

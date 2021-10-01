@@ -1,0 +1,83 @@
+@use "sass:math";
+
+// ----
+// Colors
+// ----
+$color-primary: #293881;
+$color-light: #fff;
+$color-dark: #000;
+$color-paragraph: #777;
+
+// ----
+// Breakpoints
+// ----
+$container-width: 1290px;
+$container-width-large: 1600px;
+$mobile-external-gutter: 25px;
+$breakpoints : (
+    xsm: 600,
+    sm: 768,
+    md: 1024,
+    lg: 1290,
+    xl: 1600
+);
+
+// ----
+// Columns
+// ----
+$column-preset : (
+    /* preset for desktop */
+    d : (
+        columnwidth: 80,
+        gutterwidth: 30,
+        totalcolumn: 12
+    ),
+    /* preset for tablet */
+    t : (
+        columnwidth: 76,
+        gutterwidth: 22,
+        totalcolumn: 8
+    ),
+    /* preset for mobile */
+    m : (
+        columnwidth: 76,
+        gutterwidth: 22,
+        totalcolumn: 4
+    )
+);
+
+// ----
+// Spacing
+// ----
+$base-spacing: 40px;
+$half-base-spacing: math.div($base-spacing, 2);
+
+// ----
+// Border
+// ----
+$base-border-color: $color-dark;
+$base-border: 1px solid $base-border-color;
+$base-border-radius: 3px;
+
+// ==========
+// Fonts
+// ==========
+$primary-font-family: graphik, verdana, sans-serif;
+$secondary-font-family: americana, georgia, sans-serif;
+
+// ----
+// Font Size
+// ----
+$base-font-size: 16px;
+
+// ----
+// Line Height
+// ----
+$base-line-height: 2;
+$heading-line-height: 1.3;
+
+// ----
+// Easing
+// ----
+$easingEffectNormal: cubic-bezier(.86, 0, .07, 1);
+$easingEffectSwift: cubic-bezier(0, 0, .2, .92);

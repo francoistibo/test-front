@@ -1,0 +1,17 @@
+// Show desktop only
+.is-desktop {
+    @include breakpoints(sm, max) {
+        display: none !important;
+        pointer-events: none;
+        touch-action: none;
+    }
+}
+
+// Show mobile only
+.is-mobile {
+    @include breakpoints(sm) {
+        display: none !important;
+        pointer-events: none;
+        touch-action: none;
+    }
+}

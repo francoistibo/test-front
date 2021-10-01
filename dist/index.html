@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/apple-touch-icon.ff78d634.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAADcUlEQVR4AdWWB0gDVxzGgwvZsoeIoIhslKUoKIgzIOKiKlOGLBEBFQcRAZElKhBAUUAERSGuhlBtQhUotmhoBAMxmkuapVlmXS7zLu2HB6fEmLxahPaxXnKP97v7/t9/iP765vUfAITD4efX5fF4fD4fwzDJZJJ/RNM0x3HCyXiC1ersz84AKcDv9+/t7S0vL19dXblcLlyHf2w2G0VRXq9XrVYvLi5GIhHh/K+/G8Q/SNUaMxHg7u6us7Ozv7/fZDKlPAqFQgCXlZWJxeJYLMb/yXFJ1aVO9uMfsTibHXB7e1tVVVVZWXl/f5/2QCAQ6Ovra29vFwC2J5/7hSaKgdvtbm1tFYlEECeDgNBteHg4Go1iH6Qjj0YXPoIIsLKygtuLi4t1Ol3m4G9vbyPmLJd8oJwhJkbkIofDUV1dDUBHRwcfwAwL1kokErYn/5PDT2pTuVxeWFgIwMTEBInNaTr6SAniEAAkEonodUml0qy3QxzK5OHFIQKwLDswMIDbc3NzDw4OsgKsdu/x6c/elxdSACzR0tICQH5+PrTKIk4oqjc4JfPzU1NTMCsRAFFtamoCoKCgQKFQZLgdokN6iANTIN1OTk6IAPF4vKurC4C8vLzDw8MMANgGmcXvd3Z2ent74VeiII+NjfFB3tra+ux2vDiMz7Ic/9Nutzc0NFxfXxMBkDs5OTkALCwsfCqO0YXUfW+NwcHB9fV1IoBery8tLQUAZQ5JlCa5nAFBHGEhaWZnZ4kAqO+jo6MAoNJZrdaUpwzEMQjivK2ZmZnJyUnShqPVaisqKpAKqMkp4hiMrkAwTf0YGRlZWloiBWDt7+8XFRU1NzejsbyVKWcAmfXxcDAYxMmjoyMigCDU7u5ueXn53NwcX/KYcAxplUhwHw9fXFzU1taazeZ/1pPReDUazfj4+OrqqtFofKAcacVB0R4aGpqenv5i00fqUZThl8vfjk+VKH/4mfKha2trdXV1aKtfnyoi0YTJ4pPLFW1tbXjfd45icDs6q0ql+vrYAqEok5sOxc/OfgIA8URILBYLQtrT01NfX69UKv/VXORyB81WLzbn5+clJSXd3d1o9DU1NY2NjZhZ0geWHBCJxOEcjFPYI+k2NjY2NzdlMtnNzY1gX1JAenH+dPv8zHeNjihnVrvvG2dT9FvUhv/BdP03H2bu1ED+duYAAAAASUVORK5CYII=">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAABbUlEQVR4AYVSAYcCQRS+X1AABP2zEIAg/YMgQAQFEZEiIQLllpRrT5tFiGarvVtdR023s201M7N1T511zW3XB96bed/M9973ns5/cLrgfAc3BEKIpmmWZUFg2/ZsNkMIwfnHp90bIJmwWq1SqVSn0/E8D1LGWDabLZVKEJvv+M3CNwQoSiaT8XhcCOE/sVgs+v3+zqXEOcqSJpNJNBotl8vX1H+FOO5m60JLMqFer4fD4W63K7WIDAvjr4CmC4UCEIbD4e+7ncteBlq1Wg34oVKphEIhUOxfUCY2eMc5z+fz8/lcJui6HolEarWabwVUU8ohbjabiqLIBBhiLBZLJBLX1HGOhByucavVarfbAcZNp1MYq6qqnHt4u/dOJ7+98Xgc7PRyuYTf1VcdGT+iR6MR2EcpDSYA9gf+rPSKxSKQQUwmkzFN8+4uMSZAjGEY6XQ6l8s1Go31ev3f8tnkcLxMBqYJNj/eVgFFj/ANwWO63KYxMkEAAAAASUVORK5CYII=">
+    <link rel="manifest" href="data:application/manifest+json;base64,ewogICAgIm5hbWUiOiAiQ0kiLAogICAgInNob3J0X25hbWUiOiAiQ0kiLAogICAgImljb25zIjogWwogICAgICAgIHsKICAgICAgICAgICAgInNyYyI6ICIvYW5kcm9pZC1jaHJvbWUtMTQ0eDE0NC5wbmciLAogICAgICAgICAgICAic2l6ZXMiOiAiMTQ0eDE0NCIsCiAgICAgICAgICAgICJ0eXBlIjogImltYWdlL3BuZyIKICAgICAgICB9CiAgICBdLAogICAgInRoZW1lX2NvbG9yIjogIiNmZmZmZmYiLAogICAgImJhY2tncm91bmRfY29sb3IiOiAiI2ZmZmZmZiIsCiAgICAiZGlzcGxheSI6ICJzdGFuZGFsb25lIgp9Cg==">
+    <link rel="mask-icon" href="./assets/safari-pinned-tab.6012b455.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Comptoir de l'Image — Test motion</title>
+    <script type="module" crossorigin src="./assets/index.440025f4.js"></script>
+    <link rel="modulepreload" href="./assets/vendor.c8f757b4.js">
+    <link rel="stylesheet" href="./assets/index.33f69369.css">
+  </head>
+  <body data-scroll-container>
+    <!-- Header -->
+    <header class="header animate__section" role="banner" aria-label="Entête de page" data-scroll-section>
+      <img class="logo logo--main animate__frombottom" src="./assets/logo.a9f40978.svg" width="231" height="34" alt="Le Comptoir de l'Image - Paris - Pantin" />
+      <button class="burger"><span class="sr-only">Ouvrir/fermer le menu</span></button>
+    </header>
+
+    <!-- Content -->
+    <main id="main" class="main__content" role="main" aria-label="Contenu principal">
+
+      <!-- Projects section -->
+      <section class="section section--introduction animate__section" data-scroll-section>
+        <div class="container">
+          <div class="section__text">
+            <h1 class="animate__frombottom">Le&nbsp;comptoir de&nbsp;l'image</h1>
+            <p class="animate__frombottom">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.</p>
+            <p class="animate__frombottom">
+              <a href="#" class="button button--icon-right">
+                <span>Découvrir tous les projets</span>
+                <img src="./assets/arrow.d46dcc75.svg" width="60" height="6" alt="" class="animate__icon" aria-hidden="true" />
+              </a>
+            </p>
+          </div>
+          <div class="section__picture animate__img" data-scroll data-scroll-speed=".8">
+            <div class="animate__img-bg animate__img-h"></div>
+            <img src="./assets/art01.371a145e.jpg" class="animate__img-src animate__img-h" alt="" />
+          </div>
+          <div class="section__navigation is-desktop">
+            <a href="#jobs" class="button button--icon-right button--scroll animate__fromright">
+              <span>Scroll</span>
+              <img src="./assets/arrow.d46dcc75.svg" width="60" height="6" alt="" class="animate__icon" aria-hidden="true" />
+            </a>
+          </div>
+          <div class="section__social">
+            <ul class="social social--top">
+              <li class="social__item"><a class="social__link" href="#" aria-label="Facebook"><img class="social__icon" src="./assets/facebook-mini.babb8f4b.svg" title="Facebook icon" /></a></li>
+              <li class="social__item"><a class="social__link" href="#" aria-label="Twitter"><img class="social__icon" src="./assets/twitter-mini.3ff6f2b2.svg" title="Twitter icon" /></a></li>
+              <li class="social__item"><a class="social__link" href="#" aria-label="Instagram"><img class="social__icon" src="./assets/instagram-mini.3944d55e.svg" title="Instagram icon" /></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Jobs section -->
+      <section class="section section--jobs section--blue animate__section" id="jobs" data-scroll-section>
+        <div class="container">
+          <div class="section__text">
+            <ul class="jobs__list">
+              <li class="jobs__list-item animate__frombottom">&Eacute;tude de projet</li>
+              <li class="jobs__list-item animate__frombottom">Direction artistique</li>
+              <li class="jobs__list-item animate__frombottom">Pôle décoration et signalétique</li>
+              <li class="jobs__list-item animate__frombottom">Pôle grand format</li>
+              <li class="jobs__list-item animate__frombottom">Production</li>
+              <li class="jobs__list-item animate__frombottom">Pose et installation sur site</li>
+            </ul>
+            <p class="animate__frombottom">
+              <a href="#" class="button button--icon-right">
+                <span>Découvrir les métiers</span>
+                <img src="./assets/arrow-white.f695be73.svg" width="60" height="6" alt="" class="animate__icon" aria-hidden="true" />
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work section -->
+      <section class="section section--work animate__section" data-scroll-section>
+        <div class="section__text">
+          <h2 class="work__title animate__frombottom">Les réalisations</h2>
+          <ul class="work__list">
+            <li class="work__list-item"><img class="work__list-pic" src="./assets/art02.425daf0a.jpg" alt="" data-color-background="blue" data-animation="on" /></li>
+            <li class="work__list-item"><img class="work__list-pic" src="./assets/art03.d5f6e961.jpg" alt="" data-color-background="white" data-animation="off" /></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Philosophy section -->
+      <section class="section section--phylosophy animate__section" data-scroll-section>
+        <div class="container">
+          <div class="section__text">
+            <h2 class="animate__frombottom">Notre <span>philosophie.</span></h2>
+            <p class="animate__frombottom">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris. Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p>
+            <p class="animate__frombottom">
+              <a href="#" class="button button--icon-right">
+                <span>Découvrir l'agence</span>
+                <img src="./assets/arrow.d46dcc75.svg" width="60" height="6" alt="" class="animate__icon" aria-hidden="true" />
+              </a>
+            </p>
+          </div>
+          <div class="section__pictures">
+            <div class="section__pictures-col-md" data-scroll data-scroll-speed=".6">
+              <img class="section__pictures-item" src="./assets/art05.f5a556f3.jpg" alt="" />
+              <img class="section__pictures-item" src="./assets/art06.bb9a08aa.jpg" alt="" />
+            </div>
+            <div class="section__pictures-col-lg" data-scroll data-scroll-speed="1.4">
+              <img class="section__pictures-item" src="./assets/art04.c1dbaef3.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Partners section -->
+      <section class="section section--partners animate__section" data-scroll-section>
+        <div class="container">
+          <div class="inner">
+            <div class="section__text">
+              <h2 class="animate__frombottom">Ils nous font <span>confiance.</span></h2>
+              <p class="animate__frombottom">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique.</p>
+            </div>
+            <img class="section__picture img--white animate__frombottom" src="./assets/partners.53c52d61.png" alt="Tous nos partenaires" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Key figures section -->
+      <section class="section section--keyfigures section--blue animate__section" data-scroll-section>
+        <div class="container">
+          <div class="section__text">
+            <h2>Quelques <span>chiffres clés.</span></h2>
+            <ul class="keyfigures__list">
+              <li class="keyfigures__list-item"><strong class="keyfigures__list-countup">50</strong> collaborateurs</li>
+              <li class="keyfigures__list-item"><strong class="keyfigures__list-countup">182</strong> clients</li>
+              <li class="keyfigures__list-item"><strong class="keyfigures__list-countup">35</strong> partenaires</li>
+              <li class="keyfigures__list-item"><strong class="keyfigures__list-countup">4500</strong> mètres carré à Pantin</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Location section -->
+      <section class="section section--location animate__section" tabindex="-1" data-scroll-section>
+        <img src="./assets/place.a323d764.jpg" alt="" data-scroll data-scroll-speed="-1" />
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo" aria-label="Pied de page" data-scroll-section>
+      <div class="container">
+        <div class="footer__col">
+          <div class="footer__map" data-scroll data-scroll-speed="1.5">
+            <img class="logo logo--footer" src="./assets/logo-white.bb6eda42.svg" width="231" height="34" alt="Le Comptoir de l'Image - Paris - Pantin" />
+            <p class="footer__map-meters">45000 m2</p>
+            <p class="footer__map-address">176 rue Diderot <br />93500 Pantin <br />France</p>
+          </div>
+          <div class="footer__contact-details footer__col-item ">
+            <h3 class="title-2 footer__title">Contact</h3>
+            <p>Phone: +33 1 48 45 22 42</p>
+            <p>Fax: +33 1 48 45 82 95</p>
+            <p><a href="mailto:info@comptoirimage.com" title="Voir les mentions légales">info@comptoirimage.com</a></p>
+          </div>
+          <div class="footer__social footer__col-item">
+            <h3 class="title-2 footer__title">Réseaux</h3>
+            <ul class="social social--bottom">
+              <li class="social__item"><a class="social__link" href="#" aria-label="Facebook"><img class="social__icon" src="./assets/facebook.38d0ab0e.svg" title="Facebook icon" /></a></li>
+              <li class="social__item"><a class="social__link" href="#" aria-label="Instagram"><img class="social__icon" src="./assets/instagram.046855b2.svg" title="Instagram icon" /></a></li>
+              <li class="social__item"><a class="social__link" href="#" aria-label="Twitter"><img class="social__icon" src="./assets/twitter.c7e04a0c.svg" title="Twitter icon" /></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__mentions">
+          <p class="footer__mentions-legals"><a href="#" title="Voir les mentions légales">Mentions légales</a></p>
+          <p class="footer__mentions-copyright">&copy; 2021 Le Comptoir de l'Image</p>
+        </div>
+      </div>
+    </footer>
+    <div class="cursor"><div class="cursor__inner"></div></div>
+    
+  </body>
+</html>

@@ -1,0 +1,19 @@
+.animate {
+    &__img {
+        position: relative;
+
+        &-bg {
+            position: absolute;
+            z-index: -1;
+            display: block;
+            width: 100%;
+            height: 100%;
+            content: "";
+            background-color: $color-primary;
+        }
+
+        &-src {
+            display: block;
+        }
+    }
+}
